@@ -10,6 +10,7 @@ def test(name='World'):
 @route('/')
 def index():
 	#html=subprocess.call(['python3','ti.py'])
+
 	if os.path.exists("data"):
 		os.remove("data")
 	done=os.system("python3 ti.py >> data")
@@ -50,4 +51,5 @@ def index():
 	return style+html3.replace("002B36","1E5866")
 
 port = os.environ.get('PORT', 5000)
+done=os.system("python3 ti.py")
 run(host='0.0.0.0', port=port)

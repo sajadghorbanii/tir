@@ -13,7 +13,7 @@ def index():
 
 	if os.path.exists("data"):
 		os.remove("data")
-	done=os.system("python3 ti.py >> data")
+	done=os.system("python3 crawler.py >> data")
 	with open('data', 'r') as myfile:
 		html = myfile.read()
 	if request.environ.get('HTTP_USER_AGENT').strip().startswith("curl"):
@@ -48,7 +48,7 @@ def index():
 	for line in html2:
 		html3=html3+"<pre>" + line + "</pre>\n" 
 	html=html.replace("\n","<br>")
-	return style+html3.replace("002B36","1E5866")
+	return style+html3
 
 port = os.environ.get('PORT', 5000)
 done=os.system("python3 ti.py")

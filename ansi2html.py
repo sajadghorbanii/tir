@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 from __future__ import print_function
-
+#13DB2A 586E75
 import re
 _ANSI2HTML_STYLES = {}
 ANSI2HTML_CODES_RE = re.compile('(?:\033\\[(\d+(?:;\d+)*)?([cnRhlABCDfsurgKJipm]))')
 ANSI2HTML_PALETTE = {
     # See http://ethanschoonover.com/solarized
-    'solarized': ['#073642', '#D30102', '#859900', '#B58900', '#268BD2', '#D33682', '#2AA198', '#EEE8D5', '#002B36', '#CB4B16', '#586E75', '#657B83', '#839496', '#6C71C4', '#93A1A1', '#FDF6E3'],
+    'solarized': ['#073642', '#D30102', '#859900', '#B58900', '#268BD2', '#D33682', '#2AA198', '#EEE8D5', '#1E5866', '#CB4B16', '#13DB2A', '#657B83', '#839496', '#6C71C4', '#93A1A1', '#FDF6E3'],
     # Above mapped onto the xterm 256 color palette
     'solarized-xterm': ['#262626', '#AF0000', '#5F8700', '#AF8700', '#0087FF', '#AF005F', '#00AFAF', '#E4E4E4', '#1C1C1C', '#D75F00', '#585858', '#626262', '#808080', '#5F5FAF', '#8A8A8A', '#FFFFD7'],
     # Gnome default:
